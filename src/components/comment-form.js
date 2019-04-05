@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import "./comment-form.css"
 
 export default class CommentForm extends Component {
   state = {
@@ -21,13 +20,11 @@ export default class CommentForm extends Component {
     name: event.target.value
     })
   }
-
   onChangeTitle = event => {
     this.setState({
     title: event.target.value
     })
   }
-
   onChangeComent = event => {
     this.setState({
     comment: event.target.value
@@ -36,8 +33,8 @@ export default class CommentForm extends Component {
 
   render() {
     return (
-      <form onSubmit={this.onFormSubmit}>
-      <ul className="flex-outer">
+      <form className="ui form" onSubmit={this.onFormSubmit}>
+        <ul style={{ listStyleType: 'none' }} className="flex-outer">
       <li>
         <label>Name: </label>
         <input 

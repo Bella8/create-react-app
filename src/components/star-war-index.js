@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import  SearchBar  from "./search-bar"
-import  StarWarList from './star-war-list'
+import SearchBar  from "./search-bar"
+import StarWarList from './star-war-list'
 import swapi  from '../apis/swapi'
 
 export default class StarWarIndex extends Component {

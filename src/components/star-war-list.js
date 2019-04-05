@@ -1,9 +1,8 @@
 import React from 'react'
-import "./styles/star-war-list.css";
 
 const StarWarList = ({ person }) => (
   person ? (
-      <table className='star-war-list'>
+    <table className="ui celled table" >
       <thead>
         <tr>
           <th>Name</th>
